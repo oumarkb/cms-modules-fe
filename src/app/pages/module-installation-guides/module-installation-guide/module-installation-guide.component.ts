@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AppRoutes } from '../../../enums/AppRoutes.enum';
 
 @Component({
@@ -9,6 +9,13 @@ import { AppRoutes } from '../../../enums/AppRoutes.enum';
   styleUrl: './module-installation-guide.component.css'
 })
 export class ModuleInstallationGuideComponent {
-  appRoutes : typeof AppRoutes = AppRoutes;
-  modulesDownloadsRepository: string = "https://github.com/oumarkb/cms-modules-downloads/tree/15de526b267c1fc9b1fd50fc74dec28149cfc14d/downloads"
+  @Input() moduleName: string = 'Xcelerate';
+  @Input() modulesDownloadsRepository: string = "https://github.com/oumarkb/cms-modules-downloads/tree/15de526b267c1fc9b1fd50fc74dec28149cfc14d/downloads";
+  
+  appRoutes: typeof AppRoutes = AppRoutes;
+  isExpanded = false;
+
+  toggleExpand() {
+    this.isExpanded = !this.isExpanded;
+  }
 }

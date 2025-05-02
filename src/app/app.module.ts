@@ -12,6 +12,7 @@ import { ModuleInstallationGuideComponent } from './pages/module-installation-gu
 import { MemberDirectoryModuleLicenseComponent } from './pages/member-directory-module-license/member-directory-module-license.component';
 import { ButtonComponent } from './components/button/button.component';
 import { MemberDirectoryInstalationGuideComponent } from './pages/module-installation-guides/member-directory-instalation-guide/member-directory-instalation-guide.component';
+import { CollapsiblePanelComponent } from './components/collapsible-panel/collapsible-panel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MemberDirectoryInstalationGuideComponent } from './pages/module-install
     ModuleInstallationGuideComponent,
     MemberDirectoryModuleLicenseComponent,
     ButtonComponent,
-    MemberDirectoryInstalationGuideComponent
+    MemberDirectoryInstalationGuideComponent,
+    CollapsiblePanelComponent
   ],
   imports: [
     BrowserModule,
