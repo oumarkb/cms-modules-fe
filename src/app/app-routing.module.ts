@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import { HomeComponent } from './pages/home/home.component';
 import { AppRoutes } from './enums/AppRoutes.enum';
-import { ModuleInstallationGuideComponent } from './components/module-installation-guide/module-installation-guide.component';
-import { MemberDirectoryModuleDemoComponent } from './components/member-directory-module-demo/member-directory-module-demo.component';
-import { MemberDirectoryModuleLicenseComponent } from './components/member-directory-module-license/member-directory-module-license.component';
+import { ModuleInstallationGuideComponent } from './pages/module-installation-guide/module-installation-guide.component';
+import { MemberDirectoryModuleDemoComponent } from './pages/member-directory-module-demo/member-directory-module-demo.component';
+import { MemberDirectoryModuleLicenseComponent } from './pages/member-directory-module-license/member-directory-module-license.component';
 
 const routes: Routes = [
   {path : '', component : HomeComponent},
