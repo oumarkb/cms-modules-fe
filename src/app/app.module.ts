@@ -8,9 +8,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ModuleCardComponent } from './components/module-card/module-card.component';
 import { MemberDirectoryModuleDemoComponent } from './pages/member-directory-module-demo/member-directory-module-demo.component';
-import { ModuleInstallationGuideComponent } from './pages/module-installation-guide/module-installation-guide.component';
+import { ModuleInstallationGuideComponent } from './pages/module-installation-guides/module-installation-guide/module-installation-guide.component';
 import { MemberDirectoryModuleLicenseComponent } from './pages/member-directory-module-license/member-directory-module-license.component';
 import { ButtonComponent } from './components/button/button.component';
+import { MemberDirectoryInstalationGuideComponent } from './pages/module-installation-guides/member-directory-instalation-guide/member-directory-instalation-guide.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ButtonComponent } from './components/button/button.component';
     MemberDirectoryModuleDemoComponent,
     ModuleInstallationGuideComponent,
     MemberDirectoryModuleLicenseComponent,
-    ButtonComponent
+    ButtonComponent,
+    MemberDirectoryInstalationGuideComponent
   ],
   imports: [
     BrowserModule,

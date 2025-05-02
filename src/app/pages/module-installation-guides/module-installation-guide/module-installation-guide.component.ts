@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppRoutes } from '../../enums/AppRoutes.enum';
+import { AppRoutes } from '../../../enums/AppRoutes.enum';
 
 @Component({
   selector: 'app-module-installation-guide',

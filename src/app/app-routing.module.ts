@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AppRoutes } from './enums/AppRoutes.enum';
-import { ModuleInstallationGuideComponent } from './pages/module-installation-guide/module-installation-guide.component';
+import { ModuleInstallationGuideComponent } from './pages/module-installation-guides/module-installation-guide/module-installation-guide.component';
 import { MemberDirectoryModuleDemoComponent } from './pages/member-directory-module-demo/member-directory-module-demo.component';
 import { MemberDirectoryModuleLicenseComponent } from './pages/member-directory-module-license/member-directory-module-license.component';
 
