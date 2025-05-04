@@ -1,7 +1,7 @@
 <main class="container mx-auto py-8">
     <p class="text-gray-600">Below is a live example of the module in action.</p>
     <div class="flex w-full justify-center py-5">
-        <img src="img/member-directory-module/demo.gif" alt="Member Directory Module Demo" class="w-full md:w-3/4 lg:w-1/2">
+        <img src="img/member-directory-module/member-directory-demo.gif" alt="Member Directory Module Demo" class="w-full md:w-3/4 lg:w-1/2">
     </div>
     
     <h2 class="text-2xl font-bold mt-8">Module Description</h2>
@@ -15,46 +15,9 @@
         <li><strong>Integrated Statistics:</strong> Display the total number of users for an instant overview.</li>
     </ul>
 
-    <div name="faq" class="flex flex-col gap-3">
-        <h2 class="text-2xl font-bold mt-8">Frequently Asked Questions</h2>
-        <app-collapsible-panel [title]="'How do I update a member\'s information?'">
-            <p class="text-gray-700">To update a member's information, follow these steps:</p>
-            <ol class="list-decimal list-inside mt-2 space-y-2 text-gray-700">
-                <li>Log in to your Joomla admin panel</li>
-                <li>Set up the User Profile fields:
-                    <ul class="list-disc list-inside ml-6 mt-2">
-                        <li>Navigate to System > Plugins</li>
-                        <li>Search for "User - Profile" (this is a built-in Joomla plugin)</li>
-                        <li>Enable the plugin by clicking its status icon</li>
-                        <li>Click on the plugin name to configure the profile fields:
-                            <ul class="list-disc list-inside ml-6 mt-2">
-                                <li>Set each field as Optional, Required, or Disabled based on your needs</li>
-                                <li>Save your configuration</li>
-                            </ul>
-                        </li>
-                        <li>These fields will now appear in the user registration form and profile editing page</li>
-                    </ul>
-                </li>
-                <li>To update a specific member's information:
-                    <ul class="list-disc list-inside ml-6 mt-2">
-                        <li>Go to Users > Manage</li>
-                        <li>Find and click on the user you want to update</li>
-                        <li>You'll find their information in two sections:
-                            <ul class="list-disc list-inside ml-6 mt-2">
-                                <li><strong>Account Details:</strong> Basic information (username, name, email)</li>
-                                <li><strong>User Profile:</strong> Additional information (address, phone, etc.)</li>
-                            </ul>
-                        </li>
-                        <li>Make your changes and click "Save"</li>
-                    </ul>
-                </li>
-            </ol>
-        </app-collapsible-panel>    
-    </div>
-
     <div class="mt-8 flex flex-col-reverse sm:flex-row items-center justify-center gap-5">
         <app-button [routerLink]="'/' + appRoutes.HOME" [type]="'Gray'" [text]="'Back to Home'"></app-button>
-        <app-button [routerLink]="'/' + appRoutes.MODULE_INSTALLATION_GUIDE" [type]="'Blue'" [text]="'Installation Guide'"></app-button>  
+        <app-button [routerLink]="'/' + appRoutes.MEMBER_DIRECTORY_INSTALLATION_GUIDE" [type]="'Blue'" [text]="'Installation Guide'"></app-button>  
         <app-button [routerLink]="'/' + appRoutes.MEMBER_DIRECTORY_MODULE_LICENSE" [type]="'Green'" [text]="'Get a License'"></app-button>
     </div>
 </main>

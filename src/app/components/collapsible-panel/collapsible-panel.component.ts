@@ -10,7 +10,7 @@ import { __importDefault } from 'tslib';
 })
 export class CollapsiblePanelComponent {
   @Input() title: string = 'Panel Title';
-  open: boolean = false;
+  @Input() open: boolean = false;
 
   toggle() {
     this.open = !this.open;
